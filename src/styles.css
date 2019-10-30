@@ -1,3 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/nova-dark/theme.css';
+@import '~primeng/resources/primeng.css';
+
+body .ui-fieldset {
+    border: 2px solid blue;
+}
+
+.card-hero-search .ui-card-body {
+    background-color: rgba(6, 110, 247, 0.2);
+}
+
+.card-hero-search .ui-card-title {
+    color: rgb(11, 8, 163);
+}
+

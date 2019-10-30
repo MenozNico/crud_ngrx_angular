@@ -1,8 +1,14 @@
 <div *ngIf="messageService.messages.length">
 
-    <h2>Messages</h2>
-    <button class="clear"
-            (click)="messageService.clear()">clear</button>
-    <div *ngFor='let message of messageService.messages'> {{message}} </div>
+    <p-fieldset legend="Messages" [toggleable]="true">
+        <button pButton (click)="messageService.clear()" type="button" label="Clear" 
+                icon="pi pi-trash" iconPos="left" 
+                class="ui-button-raised ui-button-warning"
+                style="margin-bottom: 1em;"></button>
+
+        <div *ngFor='let message of messageService.messages' style="margin-bottom: 0.4em;">
+            <p-message severity="info" text="{{message}}"></p-message>   
+        </div>
+    </p-fieldset>
 
 </div>
